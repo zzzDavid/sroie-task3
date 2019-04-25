@@ -67,7 +67,7 @@ def train(model, dataset, criterion, optimizer, epoch_range, batch_size):
 
         optimizer.step()
 
-        print(f"#{epoch:04d} | Loss: {loss.item():.4f}")
+        print("#{:04d} | Loss: {:.4f}".format(epoch, loss.item()) )
 
 
 if __name__ == "__main__":
